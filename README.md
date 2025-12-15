@@ -1,6 +1,14 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/anialic/nixy/main/.github/logo.svg" width="100" alt="nixy logo">
+    <a href="#">
+    <picture>
+      <img src="https://raw.githubusercontent.com/anialic/nixy/main/.github/logo.svg" width="100" alt="nixy logo">
+    </picture>
+    </a>
 </div>
+
+Nixy is a framework that can help you simplify configuration.
+
+## Key Features
 
 All configuration lives in `nodes.*`. One node is one machine:
 ```nix
