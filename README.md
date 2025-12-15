@@ -10,6 +10,10 @@
 
 Nixy is a NixOS framework that lets you define machines as nodes, enable only what you need, and keep configurations clean and declarative.
 
+```
+nix flake init -t github:anialic/nixy#minimal
+```
+
 ## Why nixy?
 
 All configuration lives in `nodes.*`. One node is one machine:
@@ -146,7 +150,4 @@ nix run .#graph         # show dependency graph (mermaid)
 
 ## Examples
 
-- [Minimal NixOS](https://gist.github.com/anialic/2ea7a1e2d3926a5704897b60a63a694a)
-- [Multi-host](https://gist.github.com/anialic/0570c49ad19b128c1377da052dc0c4c8)
-- [With deploy-rs](https://gist.github.com/anialic/b8dc7ff63b7ac01932007db3b4baa67b)
-- [Without flakes](https://gist.github.com/anialic/9b244cae11b0fe57a6b01439d4010ffc)
+- [Anialic's NixOS Configurations](https://github.com/anialic/nixos)
