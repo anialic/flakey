@@ -8,7 +8,7 @@
 
 <br/>
 
-Nixy is a framework that can help you simplify configuration.
+Nixy is a NixOS framework that lets you define machines as nodes, enable only what you need, and keep configurations clean and declarative.
 
 ## Why nixy?
 
