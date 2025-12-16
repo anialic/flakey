@@ -22,7 +22,7 @@ my-config/
 ├── modules/
 │   └── base.nix
 └── nodes/
-    └── my-machine.nix
+    └── alice.nix
 ```
 
 ## Basic Configuration
@@ -50,25 +50,25 @@ my-config/
     options.hostName = mkStr null;
     module = { node, ... }: {
       networking.hostName = node.base.hostName;
-      system.stateVersion = "24.11";
+      system.stateVersion = "25.11";
     };
   };
 }
 ```
 
-**nodes/my-machine.nix**
+**nodes/alice.nix**
 ```nix
 {
-  nodes.my-machine = {
+  nodes.alice = {
     system = "x86_64-linux";
     base.enable = true;
-    base.hostName = "my-machine";
+    base.hostName = "alice";
   };
 }
 ```
 
-## Building
+## Switch configuration
 
 ```bash
-nixos-rebuild switch --flake .#my-machine
+nixos-rebuild --sudo -L --flake .#alice switch
 ```
